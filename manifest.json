@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Loop",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["loop.js"],
+    "css": ["stylesheet.css"],
+    "run_at": "document_idle"
+  }]
+}
